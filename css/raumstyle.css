@@ -12,6 +12,7 @@ main section:last-child{
 .container-fluid{ margin-top: 20%; }
 
 main h1{
+  font-size: 3em;
   border-top:3px solid black;
   /*border-width: 2px 0;*/
   margin: 0;
