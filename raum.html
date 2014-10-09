@@ -12,25 +12,25 @@
     <div class="row">
       
       <main class="col-xs-10 col-sm-offset-4 col-sm-5" > 
-        <section id="beratung">
+        <section id="beratung" data-punkte='beratung'>
           <header>
             <h1>1 Beratung bei</h1>
-            <div class="information">
+            <div class="information hidden">
               <p> I will be information </p>
             </div>
           </header>
         </section>
 
-        <section>
+        <section id="recruitment" data-punkte='recruitment'>
           <header>
             <h1>2 Recruitment</h1>
-            <div class="information">
-              <p> I will be information </p>
+            <div class="information hidden">
+              <p> I will be information.  A medium sized text that explains this point (what does this mean, why is it important, what can we offer you)</p>
             </div>
           </header>
         </section>
 
-        <section>
+        <section id="administation" data-punkte='administration'>
           <header>
             <h1>3 Administration</h1>
             <div class="information">
@@ -62,9 +62,9 @@
 
 
 
-      
+
       <aside class="col-xs-2 col-sm-3"> 
-        <section id="beratung-punkte">
+        <section id="beratung-punkte" class="hidden">
           <ul>
             <li>Verträge + Änderungen <ul>
               <li>+ Kündigungen</li>
@@ -77,17 +77,44 @@
               <li>Befristungen +</li>
               <li>Probezeiten + Jubilaen</li></ul>
             </li>
+          </ul>
+        </section>        
 
-          
+        <section id="recruitment-punkte" class="hidden">
+          <ul>
+            <li>Recruitment <ul>
+              <li>+ Kündigungen</li>
+              </ul>
+            </li>
 
-
+            <li>Stuff</li>
           </ul>
         </section>
+
+
+        <section id="administration-punkte" class="hidden">
+          <ul>
+            <li>Administration <ul>
+              <li>+ Dinge</li>
+              <li>+ Sachen</li></ul>
+            </li>
+
+            <li>Oh Wow, very Admin</li>
+          
+            <li>Termineinhaltung: <ul>
+              <li>Probezeiten + Jubilaen</li></ul>
+            </li>
+          </ul>
+        </section>        
+
+
 
       </aside>
 
     </div>
   </div>
 
+  <script src="js/jquery-1.11.1.min.js"></script>
+  <script src="js/raum.js"></script>
 </body>
 </html>

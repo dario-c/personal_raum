@@ -21,7 +21,11 @@ h1:hover{
   color:red;
 }
 
-.information{ display: none;}
+/*.information{ display: none;}*/
+
+.hidden{
+  display: none;
+}
 
 aside ul{ 
   list-style-type: none;
