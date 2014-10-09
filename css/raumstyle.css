@@ -1,0 +1,30 @@
+
+body{
+  background-image: url("../testpolish.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+section:last-child{ 
+  border-bottom: 3px solid black;
+}
+
+.container-fluid{ margin-top: 20%; }
+
+main h1{
+  border-top:3px solid black;
+  /*border-width: 2px 0;*/
+  margin: 0;
+}
+
+h1:hover{
+  color:red;
+}
+
+.information{ display: none;}
+/**/
+/*
+main, aside{ 
+  border: 1px dotted #BADA55; 
+}
+*/
