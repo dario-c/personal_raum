@@ -1,11 +1,11 @@
 
 body{
-  background-image: url("../testpolish.png");
+/*  background-image: url("../testpolish.png");
   background-size: cover;
-  background-repeat: no-repeat;
+  background-repeat: no-repeat;*/
 }
 
-section:last-child{ 
+main section:last-child{ 
   border-bottom: 3px solid black;
 }
 
@@ -22,9 +22,12 @@ h1:hover{
 }
 
 .information{ display: none;}
-/**/
-/*
-main, aside{ 
-  border: 1px dotted #BADA55; 
+
+aside ul{ 
+  list-style-type: none;
+  padding-left: 0;
 }
-*/
+
+li{
+  margin: 10px;
+}
