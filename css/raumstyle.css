@@ -4,27 +4,45 @@ main section:last-child{
   border-bottom: 3px solid black;
 }
 
-main h1{
+h1 {
   font-size: 2.5em;
   border-top: 3px solid black;
   margin: 0;
 }
 
-p{ font-size: 1.5em;}
+p { font-size: 1.5em;}
 
 .selected{
   color:red;
 }
 
-.hidden{
+.hidden {
   display: none;
 }
 
-aside ul{ 
+aside { position: relative ; }
+
+aside section { 
+  position: absolute;
+  left: 30px; 
+  opacity: 0;
+
+  -webkit-transition: all 1s;
+  -moz-transition: all 1s;
+  -o-transition: all 1s;
+  transition: all 1s;
+}
+
+.showPoints { 
+  opacity: 1;
+  left: 0;
+}
+
+aside ul { 
   list-style-type: none;
   padding-left: 0;
 }
 
-li{
+li {
   margin: 10px;
 }

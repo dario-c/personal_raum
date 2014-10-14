@@ -1,6 +1,6 @@
 
 $(document).on("click", function(){
-  $('.information').addClass('hidden');
+  $('.pointExplanation').addClass('hidden');
 });
 
 $('main').on("mouseenter", 'section', function(event) {
@@ -9,16 +9,16 @@ $('main').on("mouseenter", 'section', function(event) {
   $('main').find('h1').removeClass('selected');
   $(this).find('h1').addClass('selected');
 
-  $('aside').find('section').addClass('hidden');
+  $('aside').find('section').removeClass('showPoints');
   var associated = $(this).data('punkte')+'-punkte';
-  $('#'+associated).removeClass('hidden');
+  $('#'+associated).addClass('showPoints');
 });
 
 
 
 $('main').on("click", 'section', function(event){
   event.stopPropagation();
-  $('.information').addClass('hidden');
+  $('.pointExplanation').addClass('hidden');
   $(this).closest('section').find('div').removeClass('hidden');
 
 });
