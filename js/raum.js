@@ -1,25 +1,34 @@
 
 $(document).on("click", function(){
-  $('.pointExplanation').addClass('hidden');
+  hidePointExplanation();
+  hideAllBulletInfo();
 });
 
 $('main').on("mouseenter", 'section', function(event) {
-
   event.stopPropagation();
   $('main').find('h1').removeClass('selected');
   $(this).find('h1').addClass('selected');
-
-  $('aside').find('section').removeClass('showPoints');
-  var associated = $(this).data('punkte')+'-punkte';
-  $('#'+associated).addClass('showPoints');
 });
-
-
 
 $('main').on("click", 'section', function(event){
   event.stopPropagation();
-  $('.pointExplanation').addClass('hidden');
+  hidePointExplanation();
   $(this).closest('section').find('div').removeClass('hidden');
+  toggleBulletInfo($(this));
 
 });
 
+
+
+function toggleBulletInfo(here){
+  hideAllBulletInfo();
+  var associated = here.data('punkte')+'-punkte';
+  $('#'+associated).addClass('showPoints');
+}
+
+function hideAllBulletInfo(){
+  $('aside').find('section').removeClass('showPoints');
+}
+function hidePointExplanation(){
+$('.pointExplanation').addClass('hidden');
+}
