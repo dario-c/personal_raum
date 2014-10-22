@@ -2,7 +2,21 @@ body {
   background: url('../images/creampaper_@2X.png');
 }
 
-.container-fluid{ margin-top: 20%; }
+/*.container-fluid{ margin-top: 20%; }*/
+
+nav { padding: 0;}
+
+nav img { 
+  width: 100%; 
+
+}
+
+.te { 
+  border: 1px dotted silver; 
+  color: silver;
+}
+
+/*main { margin-top: 10%; }*/
 
 main section:last-child{ 
   border-bottom: 3px solid black;
