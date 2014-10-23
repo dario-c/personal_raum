@@ -18,8 +18,8 @@ nav img {
   width: 100%; 
 }
 
-.impressum { margin-bottom: 100px; }
-.impressum h1 { padding-top: 20px }
+.textBody { margin-bottom: 100px; }
+.textBody h1 { padding-top: 20px }
  
 main section:last-child{ 
   border-bottom: 3px solid black;
