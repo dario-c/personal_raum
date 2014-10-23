@@ -3,6 +3,21 @@
 /*----------------------------------------*/
 body {  background: url('../images/cream-paper.png'); }
 
+h1 { font-size: 2em;  }
+p, li { font-size: 1.25em; }
+
+ul { 
+  list-style-type: none;
+  padding-left: 0;
+}
+
+.selected {
+  color:red;
+}
+
+.hidden {
+  display: none;
+}
 
 /*----------------------------------------*/
 /*------////NAVIGATION/////---------------*/
@@ -11,34 +26,33 @@ body {  background: url('../images/cream-paper.png'); }
 nav { padding: 0; }
 nav img { width: 100%;  }
 
+
 /*----------------------------------------*/
 /*---------//// MAIN  /////---------------*/
 /*----------------------------------------*/
 
+main, section { margin: 0 0 100px 0; }
 
-.textBody { margin-bottom: 100px; }
-.textBody h1 { padding-top: 20px }
- 
+h1 { 
+  padding-top: 20px;
+  margin: 0;
+  border-top: 3px solid black;
+}
+
 main section:last-child{ 
   border-bottom: 3px solid black;
 }
 
-h1 {
-  font-size: 2.5em;
-  border-top: 3px solid black;
-  margin: 0;
+.title-list { margin: 0;  }
+.title-list h1 { 
+  padding: 0; 
   cursor: pointer;
 }
 
-p { font-size: 1.5em;}
 
-.selected{
-  color:red;
-}
-
-.hidden {
-  display: none;
-}
+/*----------------------------------------*/
+/*---------//// ASIDE  /////--------------*/
+/*----------------------------------------*/
 
 aside { position: relative ; }
 
@@ -48,24 +62,14 @@ aside section {
   opacity: 0;
 
   -webkit-transition: all 1s;
-  -moz-transition: all 1s;
-  -o-transition: all 1s;
-  transition: all 1s;
+  -moz-transition:    all 1s;
+  -o-transition:      all 1s;
+  transition:         all 1s;
 }
 
 .showPoints { 
   opacity: 1;
-  left: 0;
-}
-
-aside ul { 
-  list-style-type: none;
-  padding-left: 0;
-}
-
-li {
-  font-size: 1.25em;
-  margin: 10px;
+  left: 10px;
 }
 
 /*----------------------------------------*/
