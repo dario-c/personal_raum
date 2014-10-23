@@ -17,8 +17,6 @@ $('main').on("click", 'section', function(event){
 
 });
 
-
-
 function toggleBulletInfo(here){
   hideAllBulletInfo();
   var associated = here.data('punkte')+'-punkte';

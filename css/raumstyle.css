@@ -1,22 +1,20 @@
-/*Grid Guide*/
-.te { 
-  border: 1px dotted silver; 
-  color: silver;
-}
+/*----------------------------------------*/
+/*---------////GENERAL/////---------------*/
+/*----------------------------------------*/
+body {  background: url('../images/cream-paper.png'); }
 
 
+/*----------------------------------------*/
+/*------////NAVIGATION/////---------------*/
+/*----------------------------------------*/
+/*Temporary*/
+nav { padding: 0; }
+nav img { width: 100%;  }
 
+/*----------------------------------------*/
+/*---------//// MAIN  /////---------------*/
+/*----------------------------------------*/
 
-body {
-  background: url('../images/creampaper_@2X.png');
-}
-
-
-nav { padding: 0;}
-
-nav img { 
-  width: 100%; 
-}
 
 .textBody { margin-bottom: 100px; }
 .textBody h1 { padding-top: 20px }
@@ -68,4 +66,15 @@ aside ul {
 li {
   font-size: 1.25em;
   margin: 10px;
+}
+
+/*----------------------------------------*/
+/*---------////MISC/////---------------*/
+/*----------------------------------------*/
+
+/* Grid Guide*/
+
+.te { 
+  border: 1px dotted silver; 
+  color: silver;
 }
