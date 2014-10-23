@@ -1,31 +1,84 @@
 footer {
   position: absolute;
-  bottom: 0;
-}
+  bottom: 0;}
 
 footer li { 
   margin-left: 10px;
   font-size: 1.25em;
-  display: inline-block; 
-}
+  display: inline-block; }
 
-.centered {
+nav {
+  border: 4px dotted green;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-.centered img{ 
-  /*height: 50%;*/
+/*.centered img{ 
+  height: 50%;
   width: 100%;
  }
-
-
- body { 
+*/
+body { 
 background: url('../images/openplanoffice.png') no-repeat center center fixed;
 -moz-background-size: cover;
 -webkit-background-size: cover;
 -o-background-size: cover;
 background-size: cover;
 } 
+
+
+
+#container { 
+  transform: translate(-50%, -50%)
+  position: relative;    
+ }
+
+#container div{
+  position: absolute;
+}
+
+#logo img{
+  width: 194px;
+  height: 110px;
+}
+
+img{
+/*  position: absolute;
+*/  width: 178px;
+  height: 152px;
+}
+
+
+.hide { display: none; }
+
+/*-------------------------------UN FOLDED PAPER------------------*/
+.menu{ 
+  position: relative;
+  transition: transform 1s, background-color 2s ;
+  background-color: rgba(192,192,192,0.8); 
+}
+
+#about {     
+            transform: translate(-50%, -60%) rotateX(90deg) skewX( 5deg);
+            transform-origin: bottom; 
+}
+#services {   
+            transform: translate( 47%, -60%) rotateX(90deg) skewX( 5deg);
+            transform-origin: bottom; 
+}
+#team {       
+            transform: translate(-50%,  38%) rotateX(90deg) skewX(-5deg);
+            transform-origin: top; 
+}
+#contact {    
+            transform: translate( 47%,  38%) rotateX(90deg) skewX(-5deg);
+            transform-origin: top; 
+}
+
+.menu.show { background-color: transparent; }
+#about.show {     transform: translate(-51%, -60%)}
+#services.show {  transform: translate( 48%, -60%)}
+#team.show {      transform: translate(-51%,  38%)}
+#contact.show{    transform: translate( 48%,  38%)}

@@ -1,4 +1,3 @@
-
 $(document).on("click", function(){
   hidePointExplanation();
   hideAllBulletInfo();
