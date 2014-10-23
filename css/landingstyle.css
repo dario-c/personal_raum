@@ -1,41 +1,32 @@
-footer {
-  position: absolute;
-  bottom: 0;}
 
-footer li { 
-  margin-left: 10px;
-  font-size: 1.25em;
-  display: inline-block; }
+/*----------------------------------------*/
+/*---------////GENERAL/////---------------*/
+/*----------------------------------------*/
+
+body { 
+  background: url('../images/openplanoffice.png') 
+  no-repeat center center fixed;
+  -moz-background-size: cover;
+  -webkit-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+} 
+
+/*----------------------------------------*/
+/*---------////NAVIGATION/////------------*/
+/*----------------------------------------*/
 
 nav {
-  border: 4px dotted green;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-/*.centered img{ 
-  height: 50%;
-  width: 100%;
- }
-*/
-body { 
-background: url('../images/openplanoffice.png') no-repeat center center fixed;
--moz-background-size: cover;
--webkit-background-size: cover;
--o-background-size: cover;
-background-size: cover;
-} 
-
-
-
-#container { 
-  transform: translate(-50%, -50%)
-  position: relative;    
- }
-
-#container div{
+#logo, 
+.menu {
+  left: -97px;
+  top: -55px;
   position: absolute;
 }
 
@@ -45,40 +36,105 @@ background-size: cover;
 }
 
 img{
-/*  position: absolute;
-*/  width: 178px;
+  width: 178px;
   height: 152px;
 }
 
+/*----------------------------------------*/
+/*---------////FOOTER/////---------------*/
+/*----------------------------------------*/
 
-.hide { display: none; }
+footer {
+  position: absolute;
+  bottom: 0;}
+li { 
+  margin: 0 0 0 20px;
+  font-size: 1.5em;
+  display: inline-block; }
 
-/*-------------------------------UN FOLDED PAPER------------------*/
+
+/*----------------------------------------*/
+/*------------////EFFECTS/////------------*/
+/*----------------------------------------*/
+
+
+.hide { display: none;  } 
+
+/*----------///UNFOLDED PAPER///----------*/
+/*
 .menu{ 
-  position: relative;
   transition: transform 1s, background-color 2s ;
   background-color: rgba(192,192,192,0.8); 
+  transform-origin: bottom;
+
 }
 
-#about {     
-            transform: translate(-50%, -60%) rotateX(90deg) skewX( 5deg);
-            transform-origin: bottom; 
+.menu:first-child {     
+            transform: translate(-50%, -60%) rotateX(90deg) 
+            skewX( 5deg);
 }
-#services {   
-            transform: translate( 47%, -60%) rotateX(90deg) skewX( 5deg);
-            transform-origin: bottom; 
+.menu:nth-child(2) {   
+            transform: translate( 47%, -60%) rotateX(90deg) 
+            skewX( 5deg);
 }
-#team {       
-            transform: translate(-50%,  38%) rotateX(90deg) skewX(-5deg);
+.menu:nth-child(3) {       
+            transform: translate(-50%,  38%) rotateX(90deg) 
+            skewX(-5deg);
             transform-origin: top; 
 }
-#contact {    
-            transform: translate( 47%,  38%) rotateX(90deg) skewX(-5deg);
+.menu:nth-child(4) {    
+            transform: translate( 47%,  38%) rotateX(90deg) 
+            skewX(-5deg);
             transform-origin: top; 
 }
 
-.menu.show { background-color: transparent; }
+.show { background-color: transparent; }
+.menu:first-child.show {     transform: translate(-51%, -60%)}
+.menu:nth-child(2).show {  transform: translate( 48%, -60%)}
+.menu:nth-child(3).show {      transform: translate(-51%,  38%)}
+.menu:nth-child(4).show{    transform: translate( 48%,  38%)}
+*/
+
+
+/*------------///FLAT BOARD///------------*/
+
+.menu{ 
+  transition: all 1s;
+  background-color: rgba(192,192,192,0.8); 
+  transform-origin: bottom; 
+}
+
+.menu:first-child {   transform: translate(-51%, -60%) rotateX(90deg) skewX(20deg);}
+.menu:nth-child(2) {  transform: translate( 48%, -60%) rotateX(90deg) skewX(20deg);}
+.menu:nth-child(3) {  transform: translate(-51%,  38%) rotateX(90deg) skewX(20deg);
+                      transform-origin: top; 
+} 
+.menu:nth-child(4) {  transform: translate( 48%,  38%) rotateX(90deg) skewX(20deg);
+                     transform-origin: top; 
+}
+
+.show { background-color: transparent; }
 #about.show {     transform: translate(-51%, -60%)}
 #services.show {  transform: translate( 48%, -60%)}
 #team.show {      transform: translate(-51%,  38%)}
 #contact.show{    transform: translate( 48%,  38%)}
+
+
+
+/*------------///INSIDE OUT///------------*/
+
+
+/*.menu { 
+  opacity: 0;
+  transition: transform 1s, opacity 1s 0.2s;
+  transform: scale(0.5);
+}
+
+.show {  
+  opacity: 1;
+ }
+
+#about.show {    transform: translate(-51%, -60%) }
+#services.show { transform: translate( 48%, -60%) }
+#team.show {     transform: translate(-51%,  38%) }
+#contact.show {  transform: translate( 48%,  38%) }*/
