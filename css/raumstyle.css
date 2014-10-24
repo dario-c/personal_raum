@@ -22,9 +22,31 @@ ul {
 /*----------------------------------------*/
 /*------////NAVIGATION/////---------------*/
 /*----------------------------------------*/
-/*Temporary*/
-nav { padding: 0; }
-nav img { width: 100%;  }
+
+img { max-width: 100%; }
+
+#container { 
+  position: relative ;
+}
+
+.menu { 
+  width: 50%;
+}
+
+
+#logo { 
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 50%; 
+  transform: translate(-50%,-50%);
+
+}
+
+.menu:nth-child(even){ float: left;}
+.menu:nth-child(odd){ float: right;}
+
+.clearfix { overflow: visible; }
 
 
 /*----------------------------------------*/
