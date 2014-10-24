@@ -24,14 +24,18 @@ ul {
 /*----------------------------------------*/
 
 img { max-width: 100%; }
+.menu img:hover {opacity: 0;}
 
-#container { 
+nav { 
+  background: white;
+  padding: 15px 5px 15px 5px;
   position: relative ;
+  transform: rotate(-5deg);
+  box-shadow: 10px 10px 8px 0 rgba(50, 50, 50, 0.5);
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
-.menu { 
-  width: 50%;
-}
 
 
 #logo { 
@@ -43,6 +47,19 @@ img { max-width: 100%; }
 
 }
 
+.menu:nth-child(2):hover{ background: url("../images/about-red.png");
+                    background-size: cover;}
+.menu:nth-child(3):hover{ background: url("../images/services-red.png");
+                    background-size: cover;}
+.menu:nth-child(4):hover{ background: url("../images/team-red.png");
+                    background-size: cover;}
+.menu:nth-child(5):hover{ background: url("../images/contact-red.png");
+                    background-size: cover;}
+
+.menu { 
+  width: 50%;
+  background-size: cover;
+}
 .menu:nth-child(even){ float: left;}
 .menu:nth-child(odd){ float: right;}
 
