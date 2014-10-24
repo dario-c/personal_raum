@@ -1,13 +1,12 @@
 var logo = $("#logo");
 
 logo.on("mouseenter", function(){
-  console.log("helo")
   $('.menu').addClass("show");
 });
 
 logo.parent().on("mouseleave", function(){
 
-  setTimeout("$('.menu').removeClass('show');",1000);
+  $('.menu').removeClass('show');
 });
 
 $('.menu').on("mouseenter","img",  function(){

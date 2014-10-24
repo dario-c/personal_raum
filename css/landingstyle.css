@@ -98,21 +98,26 @@ li {
 /*------------///FLAT BOARD///------------*/
 
 .menu{ 
-  transition: all 1s;
-  background-color: rgba(192,192,192,0.8); 
+  /*transition: transform 1s, background-color 1.5s 1.5s ;*/
+  /*background-color: rgba(192,192,192,0.8); */
+  transition: all 0.5s;
+  background-color: #45574d;
   transform-origin: bottom; 
 }
 
-.menu:first-child {   transform: translate(-51%, -60%) rotateX(90deg) skewX(20deg);}
-.menu:nth-child(2) {  transform: translate( 48%, -60%) rotateX(90deg) skewX(20deg);}
-.menu:nth-child(3) {  transform: translate(-51%,  38%) rotateX(90deg) skewX(20deg);
+.menu:first-child {   transform: translate(-51%, -60%) rotateX(90deg) /*skewX(20deg)*/;}
+.menu:nth-child(2) {  transform: translate( 48%, -60%) rotateX(90deg) /*skewX(20deg)*/;}
+.menu:nth-child(3) {  transform: translate(-51%,  38%) rotateX(90deg) /*skewX(20deg)*/;
                       transform-origin: top; 
 } 
-.menu:nth-child(4) {  transform: translate( 48%,  38%) rotateX(90deg) skewX(20deg);
+.menu:nth-child(4) {  transform: translate( 48%,  38%) rotateX(90deg) /*skewX(20deg)*/;
                      transform-origin: top; 
 }
 
-.show { background-color: transparent; }
+.show { 
+  background-color: transparent;
+  transition: transform 1s 0.5s, background-color 1.5s 1.2s;
+ }
 #about.show {     transform: translate(-51%, -60%)}
 #services.show {  transform: translate( 48%, -60%)}
 #team.show {      transform: translate(-51%,  38%)}
