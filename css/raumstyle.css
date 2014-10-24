@@ -27,7 +27,7 @@ img { max-width: 100%; }
 .menu img:hover {opacity: 0;}
 
 nav { 
-  background: white;
+  background: url("../images/cardtexture.png");
   padding: 15px 5px 15px 5px;
   position: relative ;
   transform: rotate(-5deg);
@@ -44,8 +44,9 @@ nav {
   left: 50%;
   width: 50%; 
   transform: translate(-50%,-50%);
-
 }
+
+#logo:hover {  opacity: 0.8;  }
 
 .menu:nth-child(2):hover{ background: url("../images/about-red.png");
                     background-size: cover;}
