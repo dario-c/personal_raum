@@ -22,7 +22,7 @@ ul {
 /*----------------------------------------*/
 /*------////NAVIGATION/////---------------*/
 /*----------------------------------------*/
-
+/*
 img { max-width: 100%; }
 .menu img:hover {opacity: 0;}
 
@@ -65,7 +65,7 @@ nav {
 .menu:nth-child(odd){ float: right;}
 
 .clearfix { overflow: visible; }
-
+*/
 
 /*----------------------------------------*/
 /*---------//// MAIN  /////---------------*/
@@ -121,4 +121,49 @@ aside section {
 .te { 
   border: 1px dotted silver; 
   color: silver;
+}
+
+
+/*----------------------------------------*/
+/*------------////TEST/////---------------*/
+/*----------------------------------------*/
+
+.test{
+  position: relative;
+}
+
+.test img {
+  width: 100%;
+}
+
+.test div {
+  /*border: 1px solid red;*/
+  border: 1px dashed green;
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  left: 20%;
+  top: 24%;
+}
+
+.test .two {
+  top: 20%;
+  left: 50%;
+}
+
+.test .three {
+  top: 54% ;
+}
+
+.test .four { 
+  top: 50%;
+  left: 50%;
+}
+
+.test .logo {
+  height: 20%;
+  border: 1px dashed red;
+  top: 41%;
+  left: 35%;
+
 }
