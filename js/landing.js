@@ -11,7 +11,7 @@ logo.parent().on("mouseleave", function(){
 
 $('.menu').on("mouseenter","img",  function(){
   console.log();
-$(this).parent().find(".unhovered").addClass("hide").next().removeClass("hide");
+$(this).parent().find(".unhovered").addClass("hide").next().removeClass("hide").addClass("up");
 });
 
 $('.menu').on("mouseleave","img",  function(){

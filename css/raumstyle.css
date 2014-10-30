@@ -27,11 +27,11 @@ img { max-width: 100%; }
 .menu img:hover {opacity: 0;}
 
 nav { 
-  background: url("../images/cardtexture.png");
-  padding: 15px 5px 15px 5px;
+  background: white;
+  padding: 15px 15px 15px 5px;
   position: relative ;
   transform: rotate(-5deg);
-  box-shadow: 10px 10px 8px 0 rgba(50, 50, 50, 0.5);
+  box-shadow: 10px 10px 18px 0 rgba(50, 50, 50, 0.3);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }

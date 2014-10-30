@@ -16,6 +16,7 @@ body {
 /*----------------------------------------*/
 
 nav {
+  border: 1px solid red;
   position: fixed;
   top: 50%;
   left: 50%;
@@ -55,7 +56,6 @@ li {
 /*----------------------------------------*/
 /*------------////EFFECTS/////------------*/
 /*----------------------------------------*/
-
 
 .hide { display: none;  } 
 
@@ -98,37 +98,43 @@ li {
 /*------------///FLAT BOARD///------------*/
 
 .menu{ 
-  /*transition: transform 1s, background-color 1.5s 1.5s ;*/
-  /*background-color: rgba(192,192,192,0.8); */
+  /*transition: transform 1s, background-color 1s;*/
+  /*background-color: rgba(192,192,192,0.5); */
+ /*
+  transition: transform 1s, background-color 1.5s 1.5s;
   transition: all 0.5s;
   background-color: #45574d;
   transform-origin: bottom; 
 }
 
-.menu:first-child {   transform: translate(-51%, -60%) rotateX(90deg) /*skewX(20deg)*/;}
-.menu:nth-child(2) {  transform: translate( 48%, -60%) rotateX(90deg) /*skewX(20deg)*/;}
-.menu:nth-child(3) {  transform: translate(-51%,  38%) rotateX(90deg) /*skewX(20deg)*/;
+.menu:first-child {   transform: translate(-51%, -60%) rotateX(90deg) skewX(20deg);}
+.menu:nth-child(2) {  transform: translate( 48%, -60%) rotateX(90deg) skewX(20deg);}
+.menu:nth-child(3) {  transform: translate(-51%,  38%) rotateX(90deg) skewX(20deg);
                       transform-origin: top; 
 } 
-.menu:nth-child(4) {  transform: translate( 48%,  38%) rotateX(90deg) /*skewX(20deg)*/;
+.menu:nth-child(4) {  transform: translate( 48%,  38%) rotateX(90deg) skewX(20deg);
                      transform-origin: top; 
 }
 
 .show { 
   background-color: transparent;
   transition: transform 1s 0.5s, background-color 1.5s 1.2s;
+    */
+    /*OR*/
+  /*
+  transition: transform 1s 0.5s, background-color 1s 0.5s;
  }
 #about.show {     transform: translate(-51%, -60%)}
 #services.show {  transform: translate( 48%, -60%)}
 #team.show {      transform: translate(-51%,  38%)}
 #contact.show{    transform: translate( 48%,  38%)}
-
-
+*/
+}
 
 /*------------///INSIDE OUT///------------*/
 
 
-/*.menu { 
+.menu { 
   opacity: 0;
   transition: transform 1s, opacity 1s 0.2s;
   transform: scale(0.5);
@@ -141,4 +147,4 @@ li {
 #about.show {    transform: translate(-51%, -60%) }
 #services.show { transform: translate( 48%, -60%) }
 #team.show {     transform: translate(-51%,  38%) }
-#contact.show {  transform: translate( 48%,  38%) }*/
+#contact.show {  transform: translate( 48%,  38%) }
