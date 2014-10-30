@@ -29,3 +29,30 @@ function hideAllBulletInfo(){
 function hidePointExplanation(){
 $('.pointExplanation').addClass('hidden');
 }
+
+$("nav").on("mouseenter","div", function(){
+    var image = $(this).closest("nav").find("img");
+    var file = "../PersonalRaum/images/";
+    
+  switch($(this)[0].className){
+    case "ueber-uns":
+    image.attr("src",file+"menu_about_selected.png");
+    break;
+    case "services":
+    image.attr("src",file+"menu_services_selected.png");
+    break;
+    case "team":
+    image.attr("src",file+"menu_team_selected.png");
+    break;
+    case "contact":
+    image.attr("src",file+"menu_contact_selected.png");
+    break;
+    default:
+    image.attr("src",file+"menu_none_selected.png");
+    break;
+  }
+});
+
+$("main").on("mouseleave", function(){
+  $(this).find("img").attr("src","file:///home/dario/Code/PersonalRaum/textPersonalRaum/141023_FILES-WEBSITE%202/141023_FILES-WEBSITE/none_selected.png");
+});

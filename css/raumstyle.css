@@ -128,17 +128,15 @@ aside section {
 /*------------////TEST/////---------------*/
 /*----------------------------------------*/
 
-.test{
+nav {
   position: relative;
 }
 
-.test img {
+nav img {
   width: 100%;
 }
 
-.test div {
-  /*border: 1px solid red;*/
-  border: 1px dashed green;
+nav div {
   position: absolute;
   width: 30%;
   height: 30%;
@@ -146,23 +144,22 @@ aside section {
   top: 24%;
 }
 
-.test .two {
+.services {
   top: 20%;
   left: 50%;
 }
 
-.test .three {
+.team {
   top: 54% ;
 }
 
-.test .four { 
+.contact { 
   top: 50%;
   left: 50%;
 }
 
 .test .logo {
   height: 20%;
-  border: 1px dashed red;
   top: 41%;
   left: 35%;
 
