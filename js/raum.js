@@ -31,28 +31,28 @@ $('.pointExplanation').addClass('hidden');
 }
 
 $("nav").on("mouseenter","div", function(){
-    var image = $(this).closest("nav").find("img");
-    var filePath = "images/";
 
+  var image = $(this).closest("nav").find("img");
+  
   switch($(this)[0].className){
     case "ueber-uns":
-    image.attr("src",filePath+"menu_about_selected.png");
+    image.attr("src","images/menu_about_selected.png");
     break;
     case "services":
-    image.attr("src",filePath+"menu_services_selected.png");
+    image.attr("src","images/menu_services_selected.png");
     break;
     case "team":
-    image.attr("src",filePath+"menu_team_selected.png");
+    image.attr("src","images/menu_team_selected.png");
     break;
     case "contact":
-    image.attr("src",filePath+"menu_contact_selected.png");
+    image.attr("src","images/menu_contact_selected.png");
     break;
     default:
-    image.attr("src",filePath+"menu_none_selected.png");
+    image.attr("src","images/menu_none_selected.png");
     break;
   }
 });
 
-$("main").on("mouseleave", function(){
-  $(this).find("img").attr("src",filePath+"none_selected.png");
+$("nav").on("mouseleave", function(){
+  $(this).find("img").attr("src","images/menu_none_selected.png");
 });
