@@ -32,7 +32,7 @@ $('.pointExplanation').addClass('hidden');
 
 $("nav").on("mouseenter","div", function(){
     var image = $(this).closest("nav").find("img");
-    var filePath = "../PersonalRaum/images/";
+    var filePath = "images/";
 
   switch($(this)[0].className){
     case "ueber-uns":
