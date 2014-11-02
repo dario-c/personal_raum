@@ -3,8 +3,8 @@
 /*----------------------------------------*/
 
 body { 
-  background: url('../images/openplanoffice.png') 
-  no-repeat center center fixed;
+  background: url('../images/background.jpeg') 
+  no-repeat bottom center fixed;
   -moz-background-size: cover;
   -webkit-background-size: cover;
   -o-background-size: cover;
