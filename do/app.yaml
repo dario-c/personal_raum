@@ -1,0 +1,9 @@
+
+name: personal-raum
+static_sites:
+- environment_slug: html
+  github:
+    branch: main
+    deploy_on_push: true
+    repo:  dario-c/personal_raum 
+  name: personal-raum
